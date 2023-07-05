@@ -1,6 +1,5 @@
 package pages;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,7 +48,6 @@ public class MenuComponent extends GenericPage {
     WebElement bookXpath;
 
 
-    @Step("Check the Elements")
     public void clickOnElements() throws InterruptedException {
         elements.click(); //expand
         System.out.println("Click on the Elements (css) works - expand.");
@@ -64,7 +62,6 @@ public class MenuComponent extends GenericPage {
         System.out.println("Click on the Elements (xpath) works - collapse.");
     }
 
-    @Step("Check the Forms")
     public void clickOnForms() throws InterruptedException {
         forms.click(); //expand
         System.out.println("Click on the Forms (css) works - expand.");
@@ -79,7 +76,6 @@ public class MenuComponent extends GenericPage {
         System.out.println("Click on the Forms (xpath) works - collapse.");
     }
 
-    @Step("Check the Alerts")
     public void clickOnAlerts() throws InterruptedException {
         alerts.click(); //expand
         System.out.println("Click on the Alerts (css) works - expand.");
@@ -94,7 +90,6 @@ public class MenuComponent extends GenericPage {
         System.out.println("Click on the Alerts (xpath) works - collapse.");
     }
 
-    @Step("Check the Widgets")
     public void clickOnWidgets() throws InterruptedException {
         widgets.click(); //expand
         System.out.println("Click on the Widgets (css) works - expand.");
@@ -109,7 +104,6 @@ public class MenuComponent extends GenericPage {
         System.out.println("Click on the Widgets (xpath) works - collapse.");
     }
 
-    @Step("Check the Interactions")
     public void clickOnInteractions() throws InterruptedException {
         interactions.click(); //expand
         System.out.println("Click on the Interactions (css) works - expand.");
@@ -124,7 +118,6 @@ public class MenuComponent extends GenericPage {
         System.out.println("Click on the Interactions (xpath) works - collapse.");
     }
 
-    @Step("Check the Book")
     public void clickOnBook() throws InterruptedException {
         book.click(); //expand
         System.out.println("Click on the Book (css) works - expand.");
